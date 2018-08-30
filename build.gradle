@@ -1,0 +1,15 @@
+plugins {
+    id "de.undercouch.download" version "3.4.3"
+}
+
+wrapper {
+  gradleVersion = '4.10'
+}
+
+task downloadDocker(type: Download) {
+  group 'Automation'
+  description 'Downloads Docker so it can be installed on the scan target slave'
+  src 'https://download.docker.com/linux/static/edge/x86_64/docker-18.06.0-ce.tgz'
+  dest buildDir
+  overwrite true
+}
