@@ -1,5 +1,5 @@
 # download-problem
-I am attempting to isolate a [problem](https://github.com/michel-kraemer/gradle-download-task/issues/120) with the Gradle
+I am attempting to isolate [issue #120](https://github.com/michel-kraemer/gradle-download-task/issues/120) on the Gradle
 download plugin. In a larger project I ran into a NoSuchFieldError with the stack trace below. This project does not
 exhibit the same problem, yet.
 
